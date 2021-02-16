@@ -5,7 +5,7 @@
   "author": "Niklas Nordlund <niklas@digitalvenues.se>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/niklasnordlund/gatsby-plugin-datadog.git"
+    "url": "git+https://github.com/niklasnordlund/gatsby-plugin-datadog.git"
   },
   "keywords": [
     "gatsby",
@@ -16,5 +16,12 @@
   "main": "index.js",
   "dependencies": {
     "@datadog/browser-logs": "latest"
+  },
+  "bugs": {
+    "url": "https://github.com/niklasnordlund/gatsby-plugin-datadog/issues"
+  },
+  "homepage": "https://github.com/niklasnordlund/gatsby-plugin-datadog#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
