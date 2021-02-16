@@ -23,10 +23,10 @@ plugins: [
     }
   }
 ];
+```
 
 Options available are same as the [Datadog initialization parameters](https://docs.datadoghq.com/logs/log_collection/javascript/#initialization-parameters). Additionally the parameter `enabled` (boolean) is available to easily turn the plugin integration on/off.
 
-```
 
 Now `datadogLogs` is available on the global window object, so you can use it like this:
 
