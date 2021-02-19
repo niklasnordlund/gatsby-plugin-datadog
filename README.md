@@ -1,6 +1,6 @@
 # gatsby-plugin-datadog
 
-Gatsby plugin to add Datadog error logging to your site.
+Gatsby plugin to add Datadog logging and real user monitoring (RUM) to your site.
 
 Learn more about Datadog [here](https://www.datadoghq.com/).
 
@@ -16,10 +16,12 @@ plugins: [
   {
     resolve: "gatsby-plugin-datadog",
     options: {
-      clientToken: '[YOUR_CLIENT_TOKEN]',
-      site: 'datadoghq.com',
-      sampleRate: 100,
-      enabled: !IS_DEV,
+      logs: {
+        clientToken: '[YOUR_CLIENT_TOKEN]',
+        site: 'datadoghq.com',
+        sampleRate: 100,
+        enabled: !IS_DEV,
+      }
     }
   }
 ];

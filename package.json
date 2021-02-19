@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-datadog",
-  "description": "Gatsby plugin to add Datadog error logging to your site.",
-  "version": "1.0.0",
+  "description": "Gatsby plugin to add Datadog logging and real user monitoring (RUM) to your site.",
+  "version": "1.1.0",
   "author": "Niklas Nordlund <niklas@digitalvenues.se>",
   "repository": {
     "type": "git",
@@ -15,7 +15,8 @@
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "@datadog/browser-logs": "latest"
+    "@datadog/browser-logs": "latest",
+    "@datadog/browser-rum": "latest"
   },
   "bugs": {
     "url": "https://github.com/niklasnordlund/gatsby-plugin-datadog/issues"
