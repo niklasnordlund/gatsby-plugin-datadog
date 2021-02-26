@@ -21,7 +21,7 @@ plugins: [
     resolve: "gatsby-plugin-datadog",
     options: {
       logs: {
-        clientToken: '[YOUR_CLIENT_TOKEN]',
+        clientToken: 'YOUR_CLIENT_TOKEN',
         site: 'datadoghq.com',
         sampleRate: 100,
         enabled: !IS_DEV,
@@ -40,8 +40,8 @@ plugins: [
     resolve: "gatsby-plugin-datadog",
     options: {
       rum: {
-        applicationId: [YOUR_CLIENT_TOKEN],
-        clientToken: '[YOUR_CLIENT_TOKEN]',
+        applicationId: 'YOUR_APP_ID',
+        clientToken: 'YOUR_CLIENT_TOKEN',
         site: 'datadoghq.com',
         sampleRate: 100,
         enabled: !IS_DEV,
@@ -65,11 +65,11 @@ plugins: [
       sampleRate: 100,
       enabled: !IS_DEV,
       rum: {
-        applicationId: [YOUR_CLIENT_TOKEN],
-        clientToken: '[YOUR_CLIENT_TOKEN]',
+        applicationId: 'YOUR_APP_ID',
+        clientToken: 'YOUR_CLIENT_TOKEN',
       },
       logs: {
-        clientToken: '[YOUR_CLIENT_TOKEN]',
+        clientToken: 'YOUR_CLIENT_TOKEN',
       }
     }
   }
@@ -90,7 +90,7 @@ When log collection is enabled `datadogLogs` will be available on the global win
 datadogLogs.logger.info("Hello World!");
 ```
 
-See [Datadog's Browser Log Collection documentation](https://docs.datadoghq.com/logs/log_collection/javascript/#usage) for available methods on the datadogLogs object.
+See [Datadog's Browser Log Collection documentation](https://docs.datadoghq.com/logs/log_collection/javascript/#usage) for available methods on the `datadogLogs` object.
 
 If RUM is enabled, RUM data will automatically be collected. `datadogRum` is also available on the global window object, so you can use it for [manual error collection](https://docs.datadoghq.com/real_user_monitoring/browser/collecting_browser_errors/?tab=npm#collect-errors-manually) and [custom user actions](https://docs.datadoghq.com/real_user_monitoring/browser/tracking_user_actions/?tab=npm#custom-user-actions), etc.
 
